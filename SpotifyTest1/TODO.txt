@@ -1,0 +1,19 @@
+﻿Authentication/Authorization:
+    DONE    * POC Login and return valid JWT
+    DONE    * POC Validate JWT for protected route
+    
+            * Link with postgreSQL database
+            * Sign up new user to DB
+            * Login to user stored in DB               
+            * Logout: store token in redis blacklist
+            
+    MAYBE?  *  Implement refresh token system
+    MAYBE?  *  Implement permission system (admin / user / etc)
+    
+Main features:
+            * Connect to spotify API and store token in singleton
+            * Modify user schema to include { Song ID List }
+            * Allow logged-in users to search songs
+            * Allow logged-in users to save a song (store song id in user list)
+            * Allow logged-in users to see their saved songs
+            * Allow logged-in users to delete a song from their list
